@@ -24,8 +24,12 @@
 
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Compile Remove="SQL Pasos\**" />
     <Content Remove="$(SpaRoot)**" />
+    <Content Remove="SQL Pasos\**" />
+    <EmbeddedResource Remove="SQL Pasos\**" />
     <None Remove="$(SpaRoot)**" />
+    <None Remove="SQL Pasos\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
